@@ -10,8 +10,8 @@ def test(DataSet, prob, k):
     scores = []
     accuracyAverage = []
 
-    methodA = kFoldCrossValidation(data, attributes, targetAttribute, 'A', k)#10
-    methodB = kFoldCrossValidation(data, attributes, targetAttribute, 'B', k)#10
+    methodA = kFoldCrossValidation(data, attributes, targetAttribute, 'A', k)
+    methodB = kFoldCrossValidation(data, attributes, targetAttribute, 'B', k)
 
     scores.append(methodA[0])
     scores.append(methodB[0])
