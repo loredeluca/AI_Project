@@ -77,10 +77,10 @@ def importance(attributes, dataSet, targetAttribute, method):
     bestAttribute = None
 
     for att in attributes:
-        tmpGain = gain(dataSet, attributes, att, targetAttribute, method)
+        g = gain(dataSet, attributes, att, targetAttribute, method)
 
-        if tmpGain >= bestGain and att != targetAttribute:
-            bestGain = tmpGain
+        if g >= bestGain and att != targetAttribute:
+            bestGain = g
             bestAttribute = att
 
     return bestAttribute
